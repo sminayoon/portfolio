@@ -1,0 +1,412 @@
+html, h1, h2, h3, h4, h5, h6, p, div, span, img, ul, li, select,  {
+	padding: 0;
+	margin: 0;
+
+}
+
+@font-face {font-family: "Light"; src: url("../fonts/IBMPlexSerif-Light.ttf");}
+@font-face {font-family: "LightItalic"; src: url("../fonts/IBMPlexSerif-LightItalic.ttf");}
+
+
+body{
+	height: 100%;
+	width: 100vw;
+	overflow-x: hidden;
+	background-color: rgb(205,209,209);
+	margin: 0;
+	padding: 0;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+p:hover{
+	cursor: pointer;
+}
+
+body {
+	margin-top: 5vh;
+}
+
+h1,h2,h4, h3, a {
+	font-family: "LightItalic"
+}
+
+p {
+	font-family: "Light"
+}
+
+#title, #bio{
+	margin-left: 3vw;
+}
+
+#title {
+	top: 1vh;
+	position: fixed;
+	z-index: 2;
+}
+
+#bio {
+	max-width: 30vw;
+	line-height: 2em;
+	margin-top: 15vh;
+}
+
+#content .accent {
+	width: 20vw;
+	opacity: .3;
+	left: 50vw;
+    bottom: -5vh;
+	filter: grayscale(30);
+	position: relative;
+}
+
+#bio .down{
+	width: 15vw;
+	opacity: .5;
+	right: 10vw;
+	top: 35vh;
+	position: absolute;
+	opacity: 0;
+	animation: tassel 10s linear;
+	animation-delay: 5s;
+	animation-iteration-count: 1
+}
+
+@keyframes tassel {
+    100%{
+    	opacity: 1
+    }
+}
+
+p.link a {
+	text-decoration: none;
+	color: black;
+}
+
+.link :hover{
+	color: #6B8E23;
+}
+
+.background {
+	background-image: url("../img/background.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 20vh;
+	left: 30vw;
+	height: 70vh;
+	width: 60vw;
+	background-color: white;
+	z-index: -1;
+}
+
+#content {
+	position: relative;
+	top: 5vh;
+}
+
+#content h1{
+	margin-left: 3vw;
+	color: #6B8E23;
+}
+
+.project {
+	display: inline-block;
+	float: left;
+	width: 30vw;
+	padding-left: 3vw;
+	text-align: center;
+	padding-top: 5vh;
+	height: 45vh;
+}
+
+.project a {
+	text-decoration: none;
+	color: black;
+}
+
+.project h2, .project h3, .project p {
+	width:25vw;
+}
+
+.project h2 {
+	font-size: 1.5em;
+	line-height: 1;
+}
+
+.project h3 {
+	line-height: 0;
+	font-size: 1em;
+}
+
+.thumbnail {
+	width: 25vw;
+	height: 30vh;
+	filter: grayscale(1);
+}
+
+.thumbnail:hover {
+	filter: grayscale(0);
+}
+
+.one {
+	background-image: url("../img/textiles.jpg");
+	background-size: 25vw 30vh;
+}
+
+.two {
+	background-image: url("../img/thesis.png");
+	background-size: 25vw ;
+	background-position: center;
+}
+
+.three {
+	background-image: url("../img/poli-shoes3.jpg");
+	background-size: 25vw;
+	background-position: center;
+}
+
+.four {
+	background-image: url("../img/vans.jpg");
+	background-size: 25vw;
+}
+
+.five {
+	background-image: url("../img/studio2018-14.jpg");
+	background-size: 25vw;
+	background-position: center;
+}
+
+.six {
+	background-image: url("../img/visual-merch5.png");
+	background-size: 25vw;
+}
+
+.seven {
+	background-image: url("../img/accessory3.jpg");
+	background-size: 25vw;
+	background-position: center;
+}
+
+#inner-intro{
+	position: fixed;
+	margin-left: 3vw;
+	top: 1vh;
+}
+
+#inner-intro .accent{
+	position: fixed;
+	top: 30vh;
+	left: 10vw;
+	font-family: "lightItalic"
+}
+
+#inner-intro .accent img{
+	max-width: 10vw;
+}
+
+#inner-intro a {
+	text-decoration: none;
+	color: black;
+}
+
+.accent{
+	text-align: center;
+}
+
+#inner-content{
+	position: absolute;
+	width: 65vw;
+	height: auto;
+	top: 0;
+	left: 35vw;
+	background-color: white;
+}
+
+#inner-content .text{
+	margin-left: 8vw;
+	width: 50vw;
+}
+
+.images{
+	background-color: black;
+	width: 45vw;
+	height: 50vh;
+	margin: 1em
+}
+
+img.full  {
+	max-width: 35vw;
+}
+
+img.small  {
+	max-width: 15vw;
+}
+
+img.med {
+	max-width: 20vw
+}
+
+.outline {
+	border: 1px solid rgba(0,0,0,0.1);
+	margin-bottom: 2vh;
+}
+
+.nav {
+	font-family: "LightItalic";
+}
+
+.nav a {
+	color: #6B8E23;
+	text-decoration: none;
+}
+
+.nav p {
+	position: fixed;
+	top: 50%;
+}
+
+a.left {
+	position: fixed;
+	top: 50%;
+	left: 35vw;
+	transform: rotate(-90deg);
+	opacity: 0;
+}
+
+a.right {
+	position: fixed;
+	top: 50%;
+	right: 0;
+	transform: rotate(-90deg);
+	opacity: 0;
+
+}
+
+#footer {
+	position: fixed;
+	bottom: 0;
+	right: 2vw;
+	opacity: 0.5;
+}
+
+/*mobile*/
+
+@media only screen 
+  and (min-device-width: 320px)
+    and (max-device-width: 736px)
+    and (-webkit-min-device-pixel-ratio: 3)  {
+    	
+    	#title{
+    		font-size: 2em;
+    	}
+
+    	#bio{
+    		max-width: 70vw;
+    		margin-top: 10vh;
+    	}
+
+    	#bio h2{
+    		font-size: 1.5em;
+    	}
+
+    	div.background {
+    		margin-top: 0;
+    		margin-left: 3vw;
+    		max-height: 100vw;
+    		opacity: 0.5;
+    		background-position: center;
+    	}
+
+    	#content h1{
+    		font-size: 2em;
+    	}
+
+    	.project {
+    		width: 90vw;
+/*    		height: 50vh;*/
+    	}
+
+    	.project h2{
+    		margin-top: 2em;
+    	}
+
+    	.project h2, .project h3, .project p {
+			width: 90vw;
+			font-size: 2em;
+		}
+
+		.thumbnail {
+			width: 90vw;
+			background-size: 90vw ;
+			/*height: 30vh;*/
+		}
+
+		#content .accent {
+			width: 50vw;
+			bottom: 5vh;
+		}
+
+		#inner-intro h1{
+			font-size: 2em;
+		}
+
+		#inner-intro .accent img{
+			max-width: 20vw;
+		}
+
+		p.link a {
+			font-size: 1.75em;
+		}
+
+		#inner-intro .accent{
+			left: 5vw;
+		}
+
+		#inner-content {
+			padding-top: 5vh;
+		}
+
+		.text h1 {
+			font-size: 2.2em;
+		}
+
+		.text h2 {
+			font-size: 2em;
+		}
+
+		.text h3 {
+			font-size: 1.75em;
+		}
+
+		.text p {
+			font-size: 1.5em;
+		}	
+
+		img.full {
+			max-width: 50vw;
+		}
+
+		img.small  {
+			max-width: 50vw;
+			padding-bottom: 2vh;
+		}
+
+		img.med {
+			max-width: 50vw
+		}
+
+		a.right {
+			font-size: 2em;
+			left: -8vw
+		}
+
+		a.left {
+			font-size: 2em;
+			left: 30vw;
+		}
+  }
+
+
