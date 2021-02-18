@@ -85,6 +85,10 @@ p.link a {
 	color: black;
 }
 
+p.link a:hover{
+	color: #6B8E23;
+}
+
 .link :hover{
 	color: #6B8E23;
 }
