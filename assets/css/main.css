@@ -19,6 +19,7 @@ body{
 
 a:hover {
 	cursor: pointer;
+	color: #6B8E23;
 }
 
 p:hover{
@@ -296,6 +297,21 @@ a.right {
 	opacity: 0.5;
 }
 
+.credit {
+	position: absolute;
+	padding-top: 2vh;
+	left: 4vw;
+	opacity: 0.5;
+}
+
+.credit a {
+	font-family: courier;
+	color: gray;
+	font-size: 0.8em;
+}
+
+
+
 /*mobile*/
 
 @media only screen 
@@ -410,6 +426,10 @@ a.right {
 		a.left {
 			font-size: 2em;
 			left: 30vw;
+		}
+
+		#footer , .credit{
+			font-size: 2em
 		}
   }
 
