@@ -57,7 +57,7 @@ p {
 #content .accent {
 	width: 20vw;
 	opacity: .3;
-	left: 50vw;
+	left: 80vw;
     bottom: -5vh;
 	filter: grayscale(30);
 	position: relative;
@@ -146,6 +146,8 @@ p.link a:hover{
 	font-size: 1em;
 }
 
+
+
 .thumbnail {
 	width: 25vw;
 	height: 30vh;
@@ -157,7 +159,8 @@ p.link a:hover{
 }
 
 .one {
-	background-image: url("../img/textiles.jpg");
+
+	background-image: url("../img/3d_moka.png");
 	background-size: 25vw 30vh;
 }
 
@@ -174,23 +177,35 @@ p.link a:hover{
 }
 
 .four {
-	background-image: url("../img/vans.jpg");
+	background-image: url("../img/textiles.jpg");
 	background-size: 25vw;
 }
 
 .five {
-	background-image: url("../img/studio2018-14.jpg");
+	background-image: url("../img/vans.jpg");
 	background-size: 25vw;
 	background-position: center;
 }
 
 .six {
-	background-image: url("../img/visual-merch5.png");
+	background-image: url("../img/studio2018-14.jpg");
 	background-size: 25vw;
 }
 
 .seven {
+	background-image: url("../img/knitting_front1.jpg");
+	background-size: 25vw;
+	background-position: center;
+}
+
+.eight{
 	background-image: url("../img/accessory3.jpg");
+	background-size: 25vw;
+	background-position: center;
+}
+
+.nine {
+	background-image: url("../img/visual-merch5.png");
 	background-size: 25vw;
 	background-position: center;
 }
@@ -235,6 +250,11 @@ p.link a:hover{
 	width: 50vw;
 }
 
+h3 a {
+	color: black;
+	text-decoration: double underline
+}
+
 .images{
 	background-color: black;
 	width: 45vw;
@@ -257,6 +277,11 @@ img.med {
 .outline {
 	border: 1px solid rgba(0,0,0,0.1);
 	margin-bottom: 2vh;
+}
+
+iframe {
+	width: 55vw;
+	height: 70vh;
 }
 
 .nav {
@@ -430,6 +455,11 @@ a.right {
 
 		#footer , .credit{
 			font-size: 2em
+		}
+
+		iframe {
+			width: 55vw;
+			height: 30vh;
 		}
   }
 
